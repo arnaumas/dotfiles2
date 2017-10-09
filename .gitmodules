@@ -7,3 +7,4 @@
 [submodule "vim/bundle/easyescape"]
 	path = vim/bundle/easyescape
 	url = https://github.com/zhou13/vim-easyescape
+	ignore = dirty
