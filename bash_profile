@@ -22,10 +22,10 @@ export PS2="\[$orange$bold\] >> \[$reset\]"
 # 2. Aliases
 alias ..='cd ../'
 alias ...='cd ../../'
-alias .3='cd ../../../'
-alias .4='cd ../../../../'
-alias .5='cd ../../../../'
-alias .6='cd ../../../../../'
+alias ....='cd ../../../'
+alias .....='cd ../../../../'
+alias ......='cd ../../../../'
+alias .......='cd ../../../../../'
 
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
