@@ -1,3 +1,6 @@
 [submodule "vim/bundle/easyescape"]
 	path = vim/bundle/easyescape
 	url = https://github.com/arnaumas/vim-easyescape
+[submodule "vim/bundle/vimtex"]
+	path = vim/bundle/vimtex
+	url = https://github.com/lervag/vimtex
