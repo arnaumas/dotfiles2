@@ -1,6 +1,3 @@
-execute pathogen#infect()
-
-
 "Toggles and switches
 filetype plugin indent on
 syntax on

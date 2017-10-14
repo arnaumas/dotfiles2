@@ -1,9 +1,9 @@
 [submodule "vim/bundle/easyescape"]
-	path = vim/bundle/easyescape
+	path = vim/pack/plugins/start/easyescape
 	url = https://github.com/arnaumas/vim-easyescape
 [submodule "vim/bundle/vimtex"]
-	path = vim/bundle/vimtex
+	path = vim/pack/plugins/start/vimtex
 	url = https://github.com/lervag/vimtex
 [submodule "vim/bundle/solarized"]
-	path = vim/bundle/solarized
+	path = vim/pack/plugins/start/solarized
 	url = https://github.com/altercation/vim-colors-solarized
