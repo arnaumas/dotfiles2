@@ -1,11 +1,10 @@
-execute pathogen#infect()
-
-set number
-
 "Toggles and switches
-syntax enable
+filetype plugin indent on
+syntax on
+set encoding=utf-8
 set background=light
 colorscheme solarized
+set number
 set hidden
 set wildmenu
 set wildmenu
@@ -24,5 +23,6 @@ let g:easyescape_chars = { "j": 1, "k": 1 }
 let g:easyescape_timeout = 100
 cnoremap jk <ESC>
 cnoremap kj <ESC>
+let mapleader = "<Space>"
 
 
