@@ -13,3 +13,6 @@
 [submodule "vim/pack/plugins/start/repeat"]
 	path = vim/pack/plugins/start/repeat
 	url = https://github.com/tpope/vim-repeat
+[submodule "vim/pack/plugins/start/UltiSnips"]
+	path = vim/pack/plugins/start/UltiSnips
+	url = https://github.com/SirVer/ultisnips
