@@ -1,0 +1,8 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Arnau Mas
+	email = arnau.mas@outlook.com
+[color]
+	ui = true
+[core]
+	excludesfile = /Users/arnaumas/.gitignore_global
