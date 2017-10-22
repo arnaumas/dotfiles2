@@ -16,3 +16,9 @@
 [submodule "vim/pack/plugins/start/UltiSnips"]
 	path = vim/pack/plugins/start/UltiSnips
 	url = https://github.com/SirVer/ultisnips
+[submodule "vim/pack/plugins/start/YouCompleteMe"]
+	path = vim/pack/plugins/start/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe
+[submodule "vim/pack/plugins/start/commentary"]
+	path = vim/pack/plugins/start/commentary
+	url = https://github.com/tpope/vim-commentary
