@@ -26,8 +26,10 @@ alias ....='cd ../../../'
 alias .....='cd ../../../../'
 alias ......='cd ../../../../'
 alias .......='cd ../../../../../'
+alias ~='cd ~'
 alias ll='ls -FGAhp1'
 alias lat='latexmk -pvc -pdf'
+
 
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave

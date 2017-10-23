@@ -25,12 +25,19 @@ set cmdheight=2
 
 "Keymaps
 let g:easyescape_chars = { "j": 1, "k": 1 }
-let g:easyescape_timeout = 100
+let g:easyescape_timeout = 500
+nnoremap <Space> <Nop>
 cnoremap jk <ESC>
 cnoremap kj <ESC>
+noremap o o<ESC>
+noremap O O<ESC>
 
-let mapleader = "<Space>"
-let maplocalleader = "<Space>"
+let mapleader = ","
+let maplocalleader = ","
+
+let g:UltiSnipsExpandTrigger = "<Tab>"
+let g:UltiSnipsJumpForwardTrigger = "<Tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<S-Tab>"
 
 "Window moving
 map <C-h> <C-w>h
@@ -39,4 +46,4 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 map <C-x> <C-w>x
 
-let g:tex_flavor = 'latex'
+let g:tex_flavor = "latex"
