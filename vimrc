@@ -25,7 +25,7 @@ set cmdheight=2
 
 "Keymaps
 let g:easyescape_chars = { "j": 1, "k": 1 }
-let g:easyescape_timeout = 500
+let g:easyescape_timeout = 800
 nnoremap <Space> <Nop>
 cnoremap jk <ESC>
 cnoremap kj <ESC>
@@ -38,6 +38,8 @@ let maplocalleader = ","
 let g:UltiSnipsExpandTrigger = "<Tab>"
 let g:UltiSnipsJumpForwardTrigger = "<Tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<S-Tab>"
+
+nnoremap g- g;
 
 "Window moving
 map <C-h> <C-w>h

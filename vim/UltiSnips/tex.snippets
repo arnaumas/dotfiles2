@@ -58,8 +58,22 @@ endsnippet
 #       MATH SPECIFIC
 #--------------------------
 
-snippet im "Inline math"
+snippet im "Inline math" i
 \( $1 \)$0
+endsnippet
+
+snippet dm "Display math"
+\[ $1 \]$0
+endsnippet
+
+snippet array "Equation array"
+\begin{IEEEeqnarray}{${1:rCl}}
+	$0
+\end{IEEEeqnarray}
+endsnippet
+
+snippet nl "New line in equation array"
+$1 & ${2:=} & $3 ${4:\\\ }
 endsnippet
 
 snippet _ "Subscript" i
@@ -78,20 +92,44 @@ snippet sq "Square root" i
 \sqrt{$1}$0
 endsnippet
 
+snippet lim "Limit" i
+\lim_{$1 \to $2}{$3}$0
+endsnippet
+
 snippet bf "Bold" i
 \mathbf{$1}$0
 endsnippet
 
 snippet cos "Cosine" i
-\cos{$1}{$0}
+\cos{$1}$0
 endsnippet
 
 snippet sin "Sine" i
-\sin{$1}{$0}
+\sin{$1}$0
 endsnippet
 
-snippet in "Inner product" i
+snippet inn "Inner product" i
 \inn{$1}{$2}$0
+endsnippet
+
+snippet set "Set builder notation" i
+\left{ $1 \colon $2 \right}$0
+endsnippet
+
+snippet dif "Derivative operator" i
+\dfrac{d}{d $1}$0
+endsnippet
+
+snippet diff "Derivative of a function" i
+\dfrac{d $1}{d $2}$0
+endsnippet
+
+snippet del "Partial derivative operator" i
+\dfrac{\partial}{\partial $1}$0
+endsnippet
+
+snippet delf "Partial derivative of a function" i
+\dfrac{\partial $1}{\partial $2}$0
 endsnippet
 
 #-------------------------
@@ -103,14 +141,26 @@ snippet num "Number with unit"
 \SI{$1}{$2}$0
 endsnippet
 
-snippet mev "Value in MeV"
+snippet vmev "Value in MeV"
 \SI{$1}{\mega\eV}$0
 endsnippet
 
-snippet mevc "Value in MeV/c"
+snippet vmevc "Value in MeV/c"
 \SI[per-mode=slash,eVcorra=0.2ex]{$1}{\mega\eVperc}$0
 endsnippet
 
-snippet mevc2 "Value in MeV/c2"
+snippet vmevc2 "Value in MeV/c2"
 \SI[per-mode=slash,eVcorra=0.2ex]{$1}{\mega\eVperc\squared}$0
+endsnippet
+
+snippet mev "MeV"
+\si{\mega\eV}$0
+endsnippet
+
+snippet mevc "MeV/c"
+\si[per-mode=slash,eVcorra=0.2ex]{\mega\eVperc}$0
+endsnippet
+
+snippet mevc2 "MeV/c2"
+\si[per-mode=slash,eVcorra=0.2ex]{\mega\eVperc\squared}$0
 endsnippet
