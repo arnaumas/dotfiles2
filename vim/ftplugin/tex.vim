@@ -31,5 +31,3 @@ call vimtex#imaps#add_map({ 'lhs' : '->', 'rhs' : '\to', 'leader' : '', 'wrapper
 call vimtex#imaps#add_map({ 'lhs' : '=>', 'rhs' : '\implies', 'leader' : '', 'wrapper' : 'vimtex#imaps#wrap_math'})
 call vimtex#imaps#add_map({ 'lhs' : 'R', 'rhs' : '\R', 'wrapper' : 'vimtex#imaps#wrap_math'})
 call vimtex#imaps#add_map({ 'lhs' : 'o', 'rhs' : '\in', 'wrapper' : 'vimtex#imaps#wrap_math'})
-
-call TexNewMathZone("M","IEEEeqnarray",1)
