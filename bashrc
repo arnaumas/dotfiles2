@@ -29,6 +29,9 @@ alias .......='cd ../../../../../'
 alias ~='cd ~'
 alias ll='ls -FGAhp1'
 alias lat='latexmk -pvc -pdf'
+alias python='python3'
+alias pip='pip3'
+alias sage='/Applications/SageMath/sage -n jupyter'
 
 
 # Setting PATH for Python 3.6

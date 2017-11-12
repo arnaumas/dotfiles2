@@ -49,3 +49,8 @@ map <C-l> <C-w>l
 map <C-x> <C-w>x
 
 let g:tex_flavor = "latex"
+
+set guifont=SF\ Mono\ Light:h12
+
+let g:vimtex_view_general_viewer = '/Applications/Skim.app/Contents/SharedSupport/displayline'
+let g:vimtex_view_general_options = '-r @line @pdf @tex'

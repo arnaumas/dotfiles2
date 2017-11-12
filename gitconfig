@@ -6,3 +6,4 @@
 	ui = true
 [core]
 	excludesfile = /Users/arnaumas/.gitignore_global
+	editor = vim

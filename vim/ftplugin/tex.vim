@@ -1,5 +1,4 @@
 let g:vimtex_imaps_leader = "."
-let g:vimtex_compiler_latexmk = {'callback' : 0}
 
 set wrap lbr
 noremap <buffer> <silent> K k
