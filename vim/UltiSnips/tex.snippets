@@ -18,11 +18,7 @@ $0
 \end{document}
 endsnippet
 
-snippet co "LaTeX command" i
-\\$1
-endsnippet
-
-snippet com "LaTeX command with arguments" i
+snippet com "LaTeX command" i
 \\$1{$2}$0
 endsnippet
 
@@ -71,9 +67,13 @@ snippet dm "Display math"
 endsnippet
 
 snippet array "Equation array"
-\begin{align}
+\begin{IEEEeqnarray}{${1:rCl}}
 	$0
-\end{align}
+\end{IEEEeqnarray}
+endsnippet
+
+snippet nl "New line in equation array"
+$1 & ${2:=} & $3 ${4:\\\ }
 endsnippet
 
 snippet _ "Subscript" i
