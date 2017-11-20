@@ -1,0 +1,38 @@
+snippet book "Book"
+@book{${1:Label},
+	author = "${2:Author}",
+	title = "${3:Title}",
+	year = "${4:Year}",
+	publisher = "${5:Publisher}"
+}$0
+endsnippet
+
+snippet art "Article"
+@article{${1:Label},
+	author = "${2:Author}",
+	title = "${3:Title}",
+	journal = "${4:Journal}",
+	volume = "${5:Volume}",
+	number = "${6:Number}",
+	pages = "${7:Pages}",
+	year = "${8:Year}",
+	DOI = "${9:DOI}"
+}$0
+endsnippet
+
+snippet trep "Technical Report"
+@techreport{${1:Label},
+	author = "${2:Author}",
+	title = "${3:Title}",
+	year = "${4:Year}",
+	institution = "${5:Institution}",
+	note = "Available at \url{${6:url}}"
+}
+endsnippet
+
+
+
+snippet url "Note field with url"
+	note = "Available at \url{${1:url}}"
+endsnippet
+	
