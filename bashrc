@@ -33,7 +33,7 @@ alias python='python3'
 alias pip='pip3'
 alias sage='/Applications/SageMath/sage -n -jupyter'
 # Make MacVim the default editor
-alias vim='mvim -v' 
+# alias mvim='mvim -v' 
 
 # 3. Settings and Toggles
 # Set bash to vi mode
