@@ -49,3 +49,7 @@ map <C-l> <C-w>l
 map <C-x> <C-w>x
 
 let g:tex_flavor = "latex"
+
+"Font for MacVim
+set guifont=SF\ Mono\ Light:h12
+

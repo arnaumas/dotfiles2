@@ -32,9 +32,11 @@ alias lat='latexmk -pvc -pdf'
 alias python='python3'
 alias pip='pip3'
 alias sage='/Applications/SageMath/sage -n -jupyter'
+# Make MacVim the default editor
+alias vim='mvim -v' 
+
+# 3. Settings and Toggles
+# Set bash to vi mode
+set -o vi
 
 
-# Setting PATH for Python 3.6
-# The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
-export PATH
