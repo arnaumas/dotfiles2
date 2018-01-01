@@ -1,6 +1,9 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{header}
 
+% General packages
+\RequirePackage{graphicx}
+
 % Language packages
 \RequirePackage[catalan,english]{babel}
 \RequirePackage[utf8]{inputenc}
@@ -9,6 +12,7 @@
 % Mathematics packages
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
+\RequirePackage{siunitx}
 
 % Format commands
 
@@ -19,5 +23,7 @@
 \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\inn}[2]{\left\langle#1\, {,} \, #2\right\rangle}
+
+\newcommand{\data}[3]{\SI[separate-uncertainty = true]{#1 \pm #2}{#3}}
 
 \endinput
