@@ -1,3 +1,10 @@
 # General ignores
 .DS_Store
 *.swp
+
+# LaTeX Compilation Products
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
