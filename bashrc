@@ -31,7 +31,7 @@ alias ll='ls -FGAhp1'
 alias lat='latexmk -pvc -pdf'
 alias python='python3'
 alias pip='pip3'
-alias sage='/Applications/SageMath/sage -n -jupyter'
+alias sage='/Applications/SageMath/sage -n jupyter'
 # Make MacVim the default editor
 # alias mvim='mvim -v' 
 
