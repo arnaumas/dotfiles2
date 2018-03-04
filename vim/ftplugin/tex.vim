@@ -2,6 +2,8 @@ let g:vimtex_imaps_leader = "."
 
 let g:vimtex_view_method = "skim"
 
+let g:vimtex_fold_enabled
+
 set wrap lbr
 noremap <buffer> <silent> K k
 noremap <buffer> <silent> J j
@@ -32,3 +34,5 @@ call vimtex#imaps#add_map({ 'lhs' : '->', 'rhs' : '\to', 'leader' : '', 'wrapper
 call vimtex#imaps#add_map({ 'lhs' : '=>', 'rhs' : '\implies', 'leader' : '', 'wrapper' : 'vimtex#imaps#wrap_math'})
 call vimtex#imaps#add_map({ 'lhs' : 'R', 'rhs' : '\R', 'wrapper' : 'vimtex#imaps#wrap_math'})
 call vimtex#imaps#add_map({ 'lhs' : 'o', 'rhs' : '\in', 'wrapper' : 'vimtex#imaps#wrap_math'})
+
+let g:vimtex_imaps_disabled = ['jj', 'jJ', 'jk', 'jK', 'jh', 'jH', 'jl', 'jL']
