@@ -51,9 +51,15 @@ snippet sec "Section"
 $0
 endsnippet
 
+snippet eq "Begin unnumbered equation"
+\begin{equation*}
+$1
+\end{equation*}
+$0
+endsnippet
 
-snippet eq "Begin equation"
-\begin{equation}
+snippet eqn "Begin numbered equation"
+\begin{equation} \label{eq:$2}
 $1
 \end{equation}
 $0
@@ -86,7 +92,7 @@ snippet ^ "Superscript" i
 endsnippet
 
 snippet fr "Fraction" i
-\dfrac{$1}{$2}$0
+\frac{$1}{$2}$0
 endsnippet
 
 snippet sq "Square root" i
