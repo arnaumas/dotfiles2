@@ -2,9 +2,7 @@ let g:vimtex_imaps_leader = "."
 
 let g:vimtex_view_method = "skim"
 
-set foldmethod=expr
-set foldexpr=vimtex#fold#level(v:lnum)
-set foldtext=vimtex#fold#text()
+let g:vimtex_fold_enabled = 1
 
 set wrap lbr
 noremap <buffer> <silent> K k
