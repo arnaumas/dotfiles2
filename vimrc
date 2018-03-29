@@ -50,6 +50,9 @@ map <C-x> <C-w>x
 
 let g:tex_flavor = "latex"
 
-"Font for MacVim
+" Font for MacVim
 set guifont=SF\ Mono\ Light:h12
 
+" Comment strings
+autocmd FileType gnuplot setlocal commentstring=#\ %s
+autocmd FileType c setlocal commentstring=//\ %s
