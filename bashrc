@@ -38,5 +38,8 @@ alias sage='sage -n jupyter'
 # 3. Settings and Toggles
 # Set bash to vi mode
 set -o vi
+# Locale fix for python
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 
