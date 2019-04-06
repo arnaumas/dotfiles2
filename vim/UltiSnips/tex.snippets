@@ -19,12 +19,36 @@ $0
 endsnippet
 
 snippet co "LaTeX command" i
-\\$0
+\\${0:${VISUAL}}
 endsnippet
 
 snippet com "LaTeX command with arguments" i
-\\$1{$2}$0
+\\$1{${2:${VISUAL}}}$0
 endsnippet
+
+global !p
+def create_command_placeholders(snip, vim):
+	# Detect if at end of line
+	eol = (len(snip.buffer[snip.line]) == snip.snippet_end[1])
+	# Capture amount of arguments
+	placeholders = int(snip.buffer[snip.line][snip.snippet_start[1]:snip.snippet_end[1]])
+	# Erase the captured input
+	snip.buffer[snip.line] = snip.buffer[snip.line][:snip.snippet_start[1]] + snip.buffer[snip.line][snip.snippet_end[1]:]
+
+	# Create and expand anonymous snippet with command with 'n' parameters
+	anon_snippet = '\\\\$1' + ''.join(['{$' + str(i + 2) + '}' for i in range(placeholders)]) + '$0'
+	if eol:
+		snip.expand_anon(anon_snippet)
+	else:
+		vim.command('normal h')
+		snip.expand_anon(anon_snippet)
+endglobal
+
+post_jump "create_command_placeholders(snip,vim)"
+snippet /com(\d+)/ "LaTeX command with variable ammount of arguments" ir
+`!p snip.rv = match.group(1)`
+endsnippet
+
 
 snippet be "Begin environment"
 \begin{$1}
@@ -69,7 +93,7 @@ endsnippet
 #       MATH SPECIFIC
 #--------------------------
 
-snippet im "Inline math"
+snippet im "Inline math" i
 \( $1 \)$0
 endsnippet
 
@@ -79,7 +103,7 @@ endsnippet
 
 snippet array "Equation array"
 \begin{align}
-	$0
+$0
 \end{align}
 endsnippet
 
@@ -123,15 +147,15 @@ snippet inn "Inner product" i
 \inn{$1}{$2}$0
 endsnippet
 
-snippet set "Set builder notation" i
-\left{ $1 \colon $2 \right}$0
+snippet dif "Differential of a function" i
+\dif{$1}{$2}{$3}$0
 endsnippet
 
-snippet dif "Derivative operator" i
+snippet der "Derivative operator" i
 \dfrac{d}{d $1}$0
 endsnippet
 
-snippet diff "Derivative of a function" i
+snippet derf "Derivative of a function" i
 \dfrac{d $1}{d $2}$0
 endsnippet
 
