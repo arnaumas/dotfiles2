@@ -105,13 +105,17 @@ snippet 'im' "Inline math" ir
 \( ${1:${VISUAL}} \)$0
 endsnippet
 
+snippet br "Set brackets"
+\\\{ $1 \\\}$0
+endsnippet
+
 snippet array "Equation array"
 \begin{align}
 $0
 \end{align}
 endsnippet
 
-snippet /(\w)+u([d])?/ "Inline function definition" ir
+snippet /(\w)+u([d])+/ "Inline function definition" ir
 ${1:`!p snip.rv = match.group(1)`} \colon ${2:`!p snip.rv = "\Omega" if match.group(2) is not None else "\C"`} \to \C$0
 endsnippet
 
